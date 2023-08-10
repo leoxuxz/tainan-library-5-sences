@@ -25,9 +25,9 @@
 <script>
   // 圖片數組，替換成你自己的圖片URL
   const imageArray = [
-    '圖片1的URL',
-    '圖片2的URL',
-    '圖片3的URL',
+    'https://images.app.goo.gl/rX3ow2VBet9CdwUVA',
+    'https://images.app.goo.gl/zKPsaMDYrKtULjiL9',
+    'https://images.app.goo.gl/8kJFoxcDXF8PoGqE7',
     // 添加更多圖片URL
   ];
 
