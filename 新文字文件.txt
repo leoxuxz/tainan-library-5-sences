@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>隨機圖卡</title>
+  <style>
+    /* 調整圖片顯示的大小 */
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>隨機圖卡</h1>
+
+<!-- 點擊這個按鈕以顯示隨機圖片 -->
+<button onclick="showRandomCard()">顯示圖卡</button>
+
+<!-- 圖片容器，初始隱藏 -->
+<div id="cardContainer" style="display: none;">
+  <img id="cardImage" src="" alt="隨機圖卡">
+</div>
+
+<script>
+  // 圖片數組，替換成你自己的圖片URL
+  const imageArray = [
+    '圖片1的URL',
+    '圖片2的URL',
+    '圖片3的URL',
+    // 添加更多圖片URL
+  ];
+
+  function showRandomCard() {
+    // 取得圖片容器和圖片元素
+    const cardContainer = document.getElementById('cardContainer');
+    const cardImage = document.getElementById('cardImage');
+
+    // 隨機選擇一個圖片
+    const randomIndex = Math.floor(Math.random() * imageArray.length);
+    const randomImageURL = imageArray[randomIndex];
+
+    // 設定圖片元素的src屬性
+    cardImage.src = randomImageURL;
+
+    // 顯示圖片容器
+    cardContainer.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
